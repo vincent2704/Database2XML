@@ -1,0 +1,21 @@
+.root {
+	-fx-background-color: #1d3030;
+	-fx-text-fill: white;
+}
+
+.text-field {
+	-fx-background-color: #696969;
+	-fx-text-fill: white;
+}
+
+.label {
+	-fx-text-fill: white;
+}
+
+.radio-button {
+	-fx-text-fill: white;
+}
+
+.check-box {
+	-fx-text-fill: white;
+}
