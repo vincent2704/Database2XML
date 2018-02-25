@@ -1,7 +1,5 @@
 package graphicalinterface;
 
-import com.mysql.cj.core.util.StringUtils;
-
 import converter.Database;
 import functions.MainWindowFunctions;
 import javafx.collections.FXCollections;
@@ -102,10 +100,7 @@ public class MainWindow extends GridPane {
 			String dbName = tfDb.getText();
 			String username = tfUser.getText();
 			String passwd = pfPassw.getText();
-			if (StringUtils.isNullOrEmpty(addr) || StringUtils.isNullOrEmpty(port) || StringUtils.isNullOrEmpty(dbName)
-					|| StringUtils.isNullOrEmpty(username) || StringUtils.isNullOrEmpty(passwd)) {
-				throw new NullPointerException("One of parameters is empty!");
-			}
+			
 			MainWindowFunctions.connectToDb(dbT, addr, port, dbName, username, passwd);
 			app.moveToConversionWindow();
 		} catch (Exception exc) {

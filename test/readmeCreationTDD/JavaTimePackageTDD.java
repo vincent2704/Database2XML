@@ -75,8 +75,7 @@ class JavaTimePackageTDD {
 		dtfb = dtfb.append(day);
 		dtfb.appendLiteral(" ");
 		dtfb = dtfb.append(time);
-		DateTimeFormatter f = dtfb.toFormatter();
-		
+		DateTimeFormatter f = dtfb.toFormatter();		
 		System.out.println(ldtCurrent.format(f));
 	}
 

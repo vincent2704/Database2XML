@@ -44,8 +44,7 @@ public class FileManager {
 	 *            String representing content of the created file.
 	 */
 	public void inputToFile(String fileName, String content) {
-		// changes tablename if it contains illegal Windows filename characters
-		// do ogarniecia bo to jest syf
+		// changes table name if it contains illegal Windows filename characters
 		for (int i = 0; i < fileName.length(); i++) {
 			if (fileName.charAt(i) == '/' || fileName.charAt(i) == '\\' || fileName.charAt(i) == ':'
 					|| fileName.charAt(i) == '?' || fileName.charAt(i) == '"' || fileName.charAt(i) == '<'
@@ -94,7 +93,7 @@ public class FileManager {
 	}
 
 	/**
-	 * Creates Readme.txt file content at the beginning of converion which contains
+	 * Creates Readme.txt file content at the beginning of conversion which contains
 	 * operation start time.
 	 */
 	public List<String> createReadmeStartContent(String database, String schema, String table) {
